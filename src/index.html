@@ -6,6 +6,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Академия юристов</title>
 </head>
@@ -16,25 +18,40 @@
     <nav class="header__nav">
       <div class="container">
         <div class="header__nav_block">
+          
           <div class="header__nav_logo">
             <img src="img/logo.png" alt="">
               <ul class="header__nav_list">
-                <li>Популярные видеоуроки<br><span class="span">для водителей</span></li>
-                <li>Как это работает</li>
-                <li>Как происходит обучение</li>
-                <li>Выигранные дела<br><span>после обучения у нас</span></li>
+                <li><a href="video.html">Популярные видеоуроки<br><span class="span">для водителей</span></a></li>
+                <li><a href="how_it_works.html">Как это работает</a></li>
+                <li><a href="schedule.html">Как происходит обучение</a></li>
+                <li><a href="block.html">Выигранные дела<br><span>после обучения у нас</span></a></li>
               </ul>
               <!-- header__nav_list -->
+             <!-- menu-burger -->
+             <div class="menu-block">
+              <div class="menu-nav">
+                <a class="menu-nav__link" href="#">? ???</a>
+                <a class="menu-nav__link" href="#">???????</a>
+                <a class="menu-nav__link" href="#">??????</a>
+                <a class="menu-nav__link" href="#">????????</a>
+              </div>
+              <a href="#" class="menu-btn">
+              <span></span>
+            </a>
+            </div>
+        <!-- menu-burger --> 
           </div>
           <!-- /.header__nav_logo -->
+          
           <div class="header__nav_info">
             <div class="header__nav_text">
-              <p>Российская общественная некоммерческая организация Экспертный центр ПАУ</p>
+              <p>Российская общественная некоммерческая <br> организация Экспертный центр ПАУ</p>
               <h1>Выиграй свое дело<br>
                 Без юристов<br>
                 Без рисков</h1>
               <p>Всего за 350 рублей</p>
-              <p><i class="fas fa-arrow-down"></i> Узнать больше</p>
+              <p><a href="#main"><i class="fas fa-arrow-down"></i> Узнать больше</a></p>
               <!-- &darr; -->
             </div>
             <!-- /.header__nav_text -->
@@ -47,22 +64,109 @@
       <!-- /.container -->
     </nav>
     <!-- nav -->
-  <div class="container">
-    <!-- навигация -->
-  </div>
-  <!-- /.container -->
   </header>
   <!-- header -->
-
+  
 <!-- гавное содержимое -->
-<main class="main">
+<main id="main" class="main">
   <div class="container">
-    <section class="section"></section>
-    <!-- /.section -->
-    <section class="section"></section>
-    <!-- /.section -->
-    <section class="section"></section>
-    <!-- /.section -->
+    <section class="info">
+      <div class="info__block form">
+        <h2>Это работает</h2>
+        <ul class="list test">
+          <li><span>—</span> Без обращения к дорогим юристам: экономия <br> минимум 15000 рублей</li>
+          <li><span>—</span> Решение любого вопроса всего за 350 рублей</li>
+          <li><span>—</span> Без риска</li>
+        </ul>
+        <p>Как все происходит:</p>
+        <ul class="info__block_list">
+          <li>Разберем вашу ситуацию</li>
+          <li>Подготовим документы</li>
+          <li>Подготовим к суду</li>
+          <li>Выиграем дело</li>
+        </ul>
+      </div>
+      <!-- /.info__block -->
+      <div class="info__block form">
+        <h2>Что Вы получаете</h2>
+        <p>По итогам обучения Вы:</p>
+        <ul class="list">
+          <li>- Разберетесь в юридическом вопросе: Пункты, статьи, правила, нормы, разъяснения.</li>
+          <li>- Получите шаблоны основных документов по своему делу – сможет сформировать свои доказательства для того чтобы выиграть дело</li>
+          <li>- Сможете выстроить линию защиты по своему делу</li>
+          <li>- Получите памятку-матрицу по своему делу: что делать, как делать, когда</li>
+        </ul>
+      </div>
+      <!-- /.info__block_2 -->
+    </section>
+    <!-- /.info -->
+    <section class="schedule">
+      <h2>Расписание</h2>
+    <div class="schedule__block">
+     <div class="schedule__blocks_left">
+      <p><u><b>24.09.19</b></u></p>
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+        7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__block -->
+      <p><u><b>26.09.19</b></u></p>
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__block -->
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__block -->
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__block -->
+    </div>
+    <!-- /.schedule__block_left -->
+      <div class="schedule__blocks_right">
+      <p><u><b>25.09.19</b></u></p>
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__block -->
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__block -->
+      <p><u><b>27.09.19</b></u></p>
+      <div class="schedule__blocks">
+        <img src="img/icon.png" alt="">
+        <p>13:00 Возврат прав за управление в состоянии опьянения</p>
+      <span>Осталось
+7 мест, поспешите подать заявку!</span><button>Записаться</button>
+    </div>
+      <!-- /.schedule__blocks -->
+    </div>
+    <!-- /.schedule__block_right -->
+  </div>
+  <!-- /.schedule__block -->
+  <button class="btn">Смотреть все расписание</button>
+    </section>
+    <!-- /.schedule -->
     <section class="section"></section>
     <!-- /.section -->
  </div>
@@ -80,8 +184,16 @@
 <!-- /.footer -->
 
 <!-- подключение скриптов -->
-<script src="js/script.js"></script>
-<script src="js/jquery-3.5.0.min.js"></script>
+<script src="../src/js/main.js"></script>
+<script src="../src/js/slick.min.js"></script>
+<script src="/src/js/jquery-3.3.1.min.js"></script>
 <script src="js/wow.min.js"></script>
+<script>
+$('.menu-btn').on('click', function(e){
+  e.preventDefault;
+  $(this).toggleClass('menu-btn_active');
+  $('.menu-nav').toggleClass('menu-nav__active');
+});
+</script>
 </body>
 </html>

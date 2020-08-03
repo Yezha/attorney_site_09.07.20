@@ -1,16 +1,18 @@
 .header__nav
-  background: url(../img/Rectangle.png) no-repeat center center fixed
+  background: url(../img/Rectangle.png) no-repeat center center
   background-size: cover
+  margin-bottom: 75px
   &_logo
     display: flex
     align-items: center
+    flex-wrap: wrap
     justify-content: space-between
     padding: 10px
     margin-bottom: 88px
   &_list
     display: flex
+    flex-wrap: wrap-reverse
     li
-      // text-align: right
       list-style: none
       font-weight: bold
       margin-right: 30px
@@ -31,13 +33,107 @@
         font-weight: lighter
         font-size: 13px
         color: rgba(255, 255, 255, 0.6)
-        width: 55%
       &:nth-child(3)
         font-size: 28px
-      &:nth-child(4)
-        font-size: 13px
-        i
-          // font-weight: lighter
-          color: #F6A913
+    p
+      font-size: 13px
+      i
+        color: #F6A913
   &_info
+    display: flex
+    justify-content: space-between
+    iframe
+      position: relative
+      top: 30px
+.menu-btn
+  position: relative
+  display: none
+  width: 50px
+  height: 50px
+  span,
+    &:after
+      width: 50px
+    &:after,
+    &:before
+      position: absolute
+      background-color: #fff
+      top: 50% 
+      margin-top: -1px
+      left: 50%
+      margin-left: -10px
+      width: 20px
+      height: 3px
+    &:after,
+    &:before
+      content: ''
+      display: block
+      transition: 0.5s
+    &:before
+      transform: translateY(-9px)
+    &:after
+      transform: translateY(7px)
+  span
+    position: absolute
+    top: 50% 
+    margin-top: -1px
+    left: 50%
+    margin-left: -10px
+    width: 20px
+    height: 3px
+    background-color: #fff
+    &:before
+
+  &_active
+      span
+        height: 0
+        &:before
+          transform: rotate(45deg)
+        &:after
+          transform: rotate(-45deg)
+.menu-block
+  display: flex
+  justify-content: center
+  align-items: center
+.menu-nav
+  transition: 0.5s
+  transform: scaleX(0) translateX(20%)
+  transform-origin: right center
+  opacity: 0
+  &__active
+    transform: scaleX(1) translateX(0%)
+    opacity: 1
+  &__link
+    display: inline-block
+    text-decoration: none
+    color: #fff
+    margin: 0 20px 0 0
+@media (max-width: 678px)
+  .header
+    &__nav
+      &_logo
+        display: flex
+        flex-wrap: nowrap
+        text-align: left
+        margin: auto
+        width: 70%
+        margin-bottom: 45px
+      &_info
+        width: 50%
+  iframe
+    width: 79%
+@media (max-width: 532px)
+  .header
+    &__nav
+      &_list
+        display: none
+      &_info
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin: auto
+        width: 70%
+      &_text
+        p:nth-child(4)
+          text-align: center
+  .menu-btn
     display: flex

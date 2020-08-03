@@ -1,0 +1,31 @@
+.schedule
+  display: flex
+  flex-direction: column
+  align-items: center
+  button
+    border: none
+    padding: 10px 15px
+    font-weight: 600
+    font-size: 16px
+  .btn
+    background: linear-gradient(100.3deg, #3D1E95 0%, rgba(96, 37, 105, 0.69) 100%)
+    box-shadow: 5px 5px 0px rgba(56, 47, 37, 0.25)
+  &__block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 93%
+    &s
+      display: flex
+      flex-direction: row
+      align-items: baseline
+      &_left,
+      &_right
+        max-width: 552px
+        span
+          text-align: center
+        button
+          background-color: $orange
+          box-shadow: 3px 3px 0px rgba(44, 23, 104, 0.15)
+@media (max-width: 522px)
+  .schedule
