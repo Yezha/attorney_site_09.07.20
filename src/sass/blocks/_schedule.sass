@@ -34,9 +34,18 @@
         button
           background-color: $orange
           box-shadow: 3px 3px 0px rgba(44, 23, 104, 0.15)
+      &_img
+        display: flex
+        flex-direction: row
+        align-items: baseline
 @media (max-width: 522px)
   .schedule
     &__blocks
       display: flex
       text-align: center
       flex-direction: column
+@media (max-width: 320px)
+  .schedule
+    &__blocks
+      align-items: center
+      
