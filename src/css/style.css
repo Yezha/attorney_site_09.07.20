@@ -190,7 +190,9 @@ template { display: none; }
   .header__nav_text p:nth-child(4) { text-align: center; }
   .menu-btn { display: -webkit-box; display: -ms-flexbox; display: flex; } }
 
-@media (max-width: 437px) { .header__nav_block { width: 50%; } }
+@media (max-width: 437px) { .header__nav { width: 400px; }
+  .header__nav_info { width: 340px; }
+  .header__nav_block { width: 50%; } }
 
 @media (max-width: 320px) { .header__nav { width: 320px; }
   .header__nav_info { width: 300px; } }
