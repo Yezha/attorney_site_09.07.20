@@ -188,8 +188,105 @@
   <button class="btn">Смотреть все расписание</button>
     </section>
     <!-- /.schedule -->
-    <section class="section"></section>
-    <!-- /.section -->
+    <section class="programm">
+      <h2>Наши программы</h2>
+      <div class="programm__block">
+        <div class="programm__blocks">
+          <img src="img/paper.png" alt="">
+          <div class="programm__blocks_text">
+            <h3>Возврат прав</h3>
+            <p>12.8.1 Как вернуть права за Управление
+              в состоянии опьянения
+              12.26 Отказ от медосвидетельствования
+              12.15.4 Выезд на встречку</p>
+            </div>
+            <!-- /.programm__blocks_text -->
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <!-- /.programm__blocks -->
+        <div class="programm__blocks">
+          <img src="img/cars.png" alt="">
+          <div class="programm__blocks_text">
+            <h3>ДТП и страховка</h3>
+            <p>Страховая не платит - как получить всю
+              выплату и даже больше
+              Страховая требует с вас оплату - как
+              оспорить
+              Вы виновник ДТП и пострадавший требует
+              компенсацию ущерба - как не платить</p>
+            </div>
+            <!-- /.programm__blocks_text -->
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <!-- /.programm__blocks -->
+        <div class="programm__blocks">
+          <img src="img/girl.png" alt="">
+          <div class="programm__blocks_text">
+            <h3>Другое</h3>
+            <p>Отмена любых штрафов с камер
+              Споры с каршеринговыми компаниями
+              Споры с СТО
+              Возврат автомобиля в автосалон
+              Возврат автомобиля продавцу
+              Споры по кредитным автомобилям</p>
+            </div>
+            <!-- /.programm__blocks_text -->
+            <i class="fas fa-arrow-right"></i>
+        </div>
+        <!-- /.programm__blocks -->
+      </div>
+      <!-- /.programm__block -->
+    </section>
+    <!-- /.programm -->
+    <section class="nameplate">
+      <h2>Кто мы</h2>
+      <div class="nameplate__block">
+        <div class="nameplate__blocks">
+          <img src="img/symbol1.png" alt="">
+          <p>Эксперты в СМИ</p>
+        </div>
+        <!-- /.nameplate__blocks -->
+        <div class="nameplate__blocks">
+          <img src="img/symbol2.png" alt="">
+          <p>Авторы книг по автоправу</p>
+        </div>
+        <!-- /.nameplate__blocks -->
+        <div class="nameplate__blocks">
+          <img src="img/symbol3.png" alt="">
+          <p>Опыт работы в <br> судах, ГИБДД, <br> прокуратуре</p>
+        </div>
+        <!-- /.nameplate__blocks -->
+      </div>
+      <!-- /.nameplate__block -->
+    </section>
+    <!-- /.nameplate -->
+    <div class="slider">
+      <div class="slider__item">
+        <img src="img/girl.png" alt="">
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <img src="img/girl.png" alt="">
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <img src="img/girl.png" alt="">
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <img src="img/girl.png" alt="">
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <img src="img/girl.png" alt="">
+      </div>
+      <!-- /.slider__item -->
+      <div class="slider__item">
+        <img src="img/girl.png" alt="">
+      </div>
+      <!-- /.slider__item -->
+    </div>
+    <!-- /.slider -->
  </div>
  <!-- /.container -->
 </main>
@@ -205,15 +302,21 @@
 <!-- /.footer -->
 
 <!-- подключение скриптов -->
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="../src/js/main.js"></script>
-<script src="../src/js/slick.min.js"></script>
-<script src="/src/js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/wow.min.js"></script>
 <script>
 $('.menu-btn').on('click', function(e){
   e.preventDefault;
   $(this).toggleClass('menu-btn_active');
   $('.menu-nav').toggleClass('menu-nav__active');
+});
+
+// слайдер
+$(document).ready(function(){
+  $('.slider').slick({
+  });
 });
 </script>
 </body>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,gBAAQ,CAAC,EACP,OAAO,EAAE,IAAI,EACb,eAAe,EAAE,aAAa,EAC9B,SAAS,EAAE,IAAI,GAYS;;AAXvB,AAAD,iBAAE,CAAC,EACD,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,MAAM,EACnB,cAAc,EAAE,MAAM,EACtB,eAAe,EAAE,aAAa,EAC9B,SAAS,EAAE,KAAK,EAChB,UAAU,EAAE,GAAG,CAAC,IAAI,CAAC,IAAI,CAAC,mBAAmB,GAKzB;;AAJnB,AAAD,sBAAM,CAAC,EAIL,OAAO,EAAE,IAAI,GAAG",
+    "sources": [
+        "../sass/blocks/programm.sass"
+    ],
+    "names": [],
+    "file": "programm.css"
+}
