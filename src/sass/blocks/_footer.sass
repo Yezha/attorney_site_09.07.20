@@ -28,3 +28,25 @@
       display: flex
       justify-content: space-between
       flex-wrap: wrap
+@media (max-width: 437px)
+  .footer
+    &__block
+      &_top
+        &-text
+          display: flex
+          flex-direction: column
+          line-height: 2
+          margin-bottom: 20px
+      &_middle
+        align-items: start
+        flex-direction: column
+        line-height: 2
+        div
+          display: flex
+          flex-direction: row
+          align-items: center
+          width: 155px
+      &_text,
+      &_bottom,
+      ul
+        display: none
