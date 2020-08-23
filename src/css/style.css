@@ -125,6 +125,10 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
+#main { width: 100%; margin: auto; }
+
+@media (max-width: 437px) { #main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; margin: auto; } }
+
 .header__nav { background: url(../img/Rectangle.png) no-repeat center center; background-size: cover; margin-bottom: 75px; }
 
 .header__nav_logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 10px; margin-bottom: 88px; }
@@ -254,6 +258,8 @@ template { display: none; }
 
 @media (max-width: 320px) { .schedule_blocks { -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
+.programm { width: 100%; }
+
 .programm__block { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .programm__blocks { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-bottom: 25px; max-width: 365px; -webkit-box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15); box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.15); }
@@ -266,7 +272,8 @@ template { display: none; }
 
 .programm__blocks_text { padding: 10px; }
 
-@media (max-width: 437px) { .programm { margin-bottom: 50px; } }
+@media (max-width: 437px) { .programm { margin-bottom: 50px; }
+  .programm__block { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: auto; } }
 
 .nameplate { margin-bottom: 65px; }
 
