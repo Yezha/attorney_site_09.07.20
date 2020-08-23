@@ -41,10 +41,11 @@
       span
         color: $orange
 .test
-  width: 110%
   display: flex
   flex-direction: column
   text-align: left
+  width: 100%
+  padding: 0
   li
     &:nth-child(2)
           margin-left: 15px
@@ -60,3 +61,10 @@
   .test li:nth-child(2),
   .test li:nth-child(3)
     margin-left: 0
+@media (max-width: 437px)
+  .info
+    &__block
+      h2
+        font-size: 28px
+    .form
+      width: 100%

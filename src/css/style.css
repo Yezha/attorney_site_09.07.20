@@ -215,7 +215,7 @@ template { display: none; }
 
 .info .list li span { color: #F6A913; }
 
-.test { width: 110%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: left; }
+.test { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: left; width: 100%; padding: 0; }
 
 .test li:nth-child(2) { margin-left: 15px; }
 
@@ -224,6 +224,9 @@ template { display: none; }
 @media (max-width: 522px) { .info { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin: auto; }
   .info .form { width: 70%; }
   .test li:nth-child(2), .test li:nth-child(3) { margin-left: 0; } }
+
+@media (max-width: 437px) { .info__block h2 { font-size: 28px; }
+  .info .form { width: 100%; } }
 
 .schedule { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 40px; }
 
