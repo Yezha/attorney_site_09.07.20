@@ -1,6 +1,6 @@
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-body { font-family: 'Montserrat', sans-serif; width: 100%; margin: 0; padding: 0; }
+body { font-family: 'Montserrat', sans-serif; width: 100%; padding: 0; }
 
 img { max-width: 100%; }
 
@@ -13,8 +13,6 @@ h2 { text-align: center; font-size: 35px; }
 a { color: #fff; text-decoration: none; }
 
 button { color: #fff; }
-
-@media (max-width: 830px) { .container { width: 100%; } }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
@@ -125,11 +123,11 @@ template { display: none; }
 /** Add the correct display in IE 10. */
 [hidden] { display: none; }
 
-#main { width: 100%; margin: auto; }
+#main { width: 100%; margin: 0 auto; }
 
-@media (max-width: 437px) { #main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 100%; margin: auto; } }
+@media (max-width: 437px) { #main { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 360px; margin: 0 auto; } }
 
-.header__nav { background: url(../img/Rectangle.png) no-repeat center center; background-size: cover; margin-bottom: 75px; }
+.header__nav { background: url(../img/Rectangle.png) no-repeat center center; background-size: cover; width: 100%; margin-bottom: 75px; }
 
 .header__nav_logo { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding: 10px; margin-bottom: 88px; }
 
@@ -254,7 +252,7 @@ template { display: none; }
 
 @media (max-width: 522px) { .schedule__blocks { display: -webkit-box; display: -ms-flexbox; display: flex; text-align: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
-@media (max-width: 437px) { .schedule { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: start; } }
+@media (max-width: 437px) { .schedule { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: start; } }
 
 @media (max-width: 320px) { .schedule_blocks { -webkit-box-align: center; -ms-flex-align: center; align-items: center; } }
 
@@ -273,7 +271,7 @@ template { display: none; }
 .programm__blocks_text { padding: 10px; }
 
 @media (max-width: 437px) { .programm { margin-bottom: 50px; }
-  .programm__block { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: auto; } }
+  .programm__block { -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0 auto; } }
 
 .nameplate { margin-bottom: 65px; }
 
@@ -299,7 +297,8 @@ template { display: none; }
 
 .footer__block_text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-@media (max-width: 437px) { .footer__block_top-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; line-height: 2; margin-bottom: 20px; }
+@media (max-width: 437px) { .footer { width: 400px; }
+  .footer__block_top-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; line-height: 2; margin-bottom: 20px; }
   .footer__block_middle { -webkit-box-align: start; -ms-flex-align: start; align-items: start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; line-height: 2; }
   .footer__block_middle div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 155px; }
   .footer__block_text, .footer__block_bottom, .footer__block ul { display: none; } }
